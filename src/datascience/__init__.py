@@ -2,10 +2,10 @@ import os
 import sys
 import logging
 
-logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
+logging_str = "[%(asctime)s: %(levelname)s :%(module)s: %(message)s]"
 
-log_dir="logs"
-log_filepath=os.path.join(log_dir,"logging.log")
+log_dir = "logs"
+log_filename = os.path.join(log_dir,"logging.log")
 os.makedirs(log_dir,exist_ok=True)
 
 logging.basicConfig(
@@ -13,9 +13,11 @@ logging.basicConfig(
     format=logging_str,
 
     handlers=[
-        logging.FileHandler(log_filepath),
-        logging.StreamHandler(sys.stdout)
+    logging.FileHandler(log_filename),
+    logging.StreamHandler(sys.stdout)
     ]
 )
+
+
 
 logger = logging.getLogger("datasciencelogger")

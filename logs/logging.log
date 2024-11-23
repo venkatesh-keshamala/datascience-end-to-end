@@ -1,0 +1,1043 @@
+[2024-11-15 23:51:50,363: INFO :main: welcome to custom logging datascience]
+[2024-11-16 14:48:47,533: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 14:48:47,558: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 14:48:47,560: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 14:48:47,562: ERROR :main: yaml file is empty]
+Traceback (most recent call last):
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\utils\common.py", line 32, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 260, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 12, in initiate_data_ingestion
+    config = ConfiguarationManager()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 11, in __init__
+    self.params=read_yaml(params_filepath)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\utils\common.py", line 34, in read_yaml
+    raise ValueError('yaml file is empty')
+ValueError: yaml file is empty
+[2024-11-16 14:49:25,770: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 14:49:25,774: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 14:49:25,788: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 14:49:25,793: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 14:49:25,796: INFO :common: directory created: artifacts]
+[2024-11-16 14:49:25,797: ERROR :main: 'ConfiguarationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+AttributeError: 'ConfiguarationManager' object has no attribute 'get_data_ingestion_config'
+[2024-11-16 14:53:53,458: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 14:53:53,462: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 14:53:53,465: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 14:53:53,467: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 14:53:53,469: INFO :common: directory created: artifacts]
+[2024-11-16 14:53:53,471: ERROR :main: 'ConfiguarationManager' object has no attribute 'get_data_ingestion_configx']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_configx()
+AttributeError: 'ConfiguarationManager' object has no attribute 'get_data_ingestion_configx'
+[2024-11-16 14:54:33,056: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 14:54:33,060: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 14:54:33,062: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 14:54:33,064: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 14:54:33,066: INFO :common: directory created: artifacts]
+[2024-11-16 14:54:33,067: ERROR :main: Argument path_to_directories of type <class 'str'> to <function create_directories at 0x000001FCB94BC550> does not match annotation type <class 'list'>]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 18, in get_data_ingestion_config
+    create_directories(config.root_dir)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\ensure\main.py", line 833, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_directories of type <class 'str'> to <function create_directories at 0x000001FCB94BC550> does not match annotation type <class 'list'>
+[2024-11-16 14:56:07,803: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 14:56:07,808: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 14:56:07,810: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 14:56:07,812: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 14:56:07,813: INFO :common: directory created: artifacts]
+[2024-11-16 14:56:07,814: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 14:56:07,814: ERROR :main: __init__() got an unexpected keyword argument 'local_data_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'local_data_file'
+[2024-11-16 15:28:14,836: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:28:14,840: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:28:14,841: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:28:14,843: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:28:14,844: INFO :common: directory created: artifacts]
+[2024-11-16 15:28:14,845: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:28:14,846: ERROR :main: __init__() got an unexpected keyword argument 'local_data_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'local_data_file'
+[2024-11-16 15:28:26,113: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:28:26,116: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:28:26,117: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:28:26,119: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:28:26,120: INFO :common: directory created: artifacts]
+[2024-11-16 15:28:26,121: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:28:26,121: ERROR :main: __init__() got an unexpected keyword argument 'local_data_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'local_data_file'
+[2024-11-16 15:34:01,072: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:34:01,075: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:34:01,076: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:34:01,077: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:34:01,078: INFO :common: directory created: artifacts]
+[2024-11-16 15:34:01,079: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:34:01,080: ERROR :main: __init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'source_URL'
+[2024-11-16 15:43:14,732: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:43:14,734: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:43:14,735: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:43:14,736: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:43:14,737: INFO :common: directory created: artifacts]
+[2024-11-16 15:43:14,738: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:43:14,738: ERROR :main: __init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'source_URL'
+[2024-11-16 15:43:17,397: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:43:17,400: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:43:17,401: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:43:17,403: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:43:17,404: INFO :common: directory created: artifacts]
+[2024-11-16 15:43:17,405: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:43:17,406: ERROR :main: __init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'source_URL'
+[2024-11-16 15:44:09,227: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:44:09,240: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:44:09,242: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:44:09,243: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:44:09,244: INFO :common: directory created: artifacts]
+[2024-11-16 15:44:09,245: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:44:09,245: ERROR :main: __init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'source_URL'
+[2024-11-16 15:44:43,067: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:44:43,070: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:44:43,072: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:44:43,073: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:44:43,074: INFO :common: directory created: artifacts]
+[2024-11-16 15:44:43,075: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:44:43,076: ERROR :main: __init__() got an unexpected keyword argument 'local_data_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'local_data_file'
+[2024-11-16 15:47:13,670: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 15:47:13,674: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 15:47:13,675: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 15:47:13,676: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 15:47:13,677: INFO :common: directory created: artifacts]
+[2024-11-16 15:47:13,678: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 15:47:13,678: ERROR :main: __init__() got an unexpected keyword argument 'local_data_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    data_ingestion_config =config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'local_data_file'
+[2024-11-16 16:59:43,320: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 16:59:43,323: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 16:59:43,325: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 16:59:43,326: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 16:59:43,328: INFO :common: directory created: artifacts]
+[2024-11-16 16:59:43,329: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 16:59:43,330: ERROR :main: __init__() got an unexpected keyword argument 'local_data_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'local_data_file'
+[2024-11-16 17:00:24,743: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:00:24,751: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:00:24,754: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:00:24,782: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:00:24,790: INFO :common: directory created: artifacts]
+[2024-11-16 17:00:24,793: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:00:24,799: ERROR :main: __init__() got an unexpected keyword argument 'config']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion=DataIngestion(config=data_ingestion_config)
+TypeError: __init__() got an unexpected keyword argument 'config'
+[2024-11-16 17:01:15,708: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:01:15,712: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:01:15,716: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:01:15,719: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:01:15,722: INFO :common: directory created: artifacts]
+[2024-11-16 17:01:15,725: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:01:15,726: ERROR :main: 'DataIngestion' object has no attribute 'download_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.download_file()
+AttributeError: 'DataIngestion' object has no attribute 'download_file'
+[2024-11-16 17:01:54,839: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:01:54,844: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:01:54,847: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:01:54,849: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:01:54,851: INFO :common: directory created: artifacts]
+[2024-11-16 17:01:54,855: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:01:54,857: ERROR :main: module 'urllib.request' has no attribute 'urlretrive']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\data_ingestion.py", line 14, in download_file
+    filename, headers = request.urlretrive(
+AttributeError: module 'urllib.request' has no attribute 'urlretrive'
+[2024-11-16 17:02:22,003: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:02:22,009: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:02:22,012: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:02:22,015: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:02:22,017: INFO :common: directory created: artifacts]
+[2024-11-16 17:02:22,020: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:02:22,022: ERROR :main: 'DataIngestionConfig' object has no attribute 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\data_ingestion.py", line 15, in download_file
+    url = self.config.source_URL,
+AttributeError: 'DataIngestionConfig' object has no attribute 'source_URL'
+[2024-11-16 17:03:06,108: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:03:06,112: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:03:06,114: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:03:06,117: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:03:06,119: INFO :common: directory created: artifacts]
+[2024-11-16 17:03:06,121: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:03:06,123: ERROR :main: __init__() got an unexpected keyword argument 'Source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'Source_URL'
+[2024-11-16 17:03:40,243: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:03:40,247: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:03:40,249: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:03:40,252: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:03:40,254: INFO :common: directory created: artifacts]
+[2024-11-16 17:03:40,256: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:03:41,226: INFO :data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5B34:22C1A1:29A4C:33DDB:6738830F
+Accept-Ranges: bytes
+Date: Sat, 16 Nov 2024 11:33:36 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100028-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1731756816.062224,VS0,VE303
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e020936299213b1dd4baf8800e5afc81b011ddb1
+Expires: Sat, 16 Nov 2024 11:38:36 GMT
+Source-Age: 0
+
+]
+[2024-11-16 17:03:41,236: ERROR :main: 'DataIngestion' object has no attribute 'extract_zip_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_ingestion_pipeline.py", line 17, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+AttributeError: 'DataIngestion' object has no attribute 'extract_zip_file'
+[2024-11-16 17:04:10,892: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 17:04:10,896: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 17:04:10,900: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 17:04:10,902: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 17:04:10,904: INFO :common: directory created: artifacts]
+[2024-11-16 17:04:10,906: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 17:04:10,908: INFO :data_ingestion: Filw already exists]
+[2024-11-16 17:04:10,937: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-16 18:22:45,439: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 18:22:45,453: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 18:22:45,455: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 18:22:45,460: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 18:22:45,462: INFO :common: directory created: artifacts]
+[2024-11-16 18:22:45,462: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 18:22:45,463: INFO :data_ingestion: Filw already exists]
+[2024-11-16 18:22:45,468: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-16 18:22:45,468: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-16 18:22:45,480: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 18:22:45,482: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 18:22:45,494: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 18:22:45,496: INFO :common: directory created: artifacts]
+[2024-11-16 18:22:45,497: INFO :common: directory created: artifacts/data_validation]
+[2024-11-16 18:22:45,501: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/wineequality-red.csv']
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    data_validation.initiate_data_validation()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation.validation_all_columns()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\data_validation.py", line 31, in validation_all_columns
+    raise e
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\data_validation.py", line 14, in validation_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/wineequality-red.csv'
+[2024-11-16 18:23:17,035: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-16 18:23:17,049: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 18:23:17,052: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 18:23:17,064: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 18:23:17,066: INFO :common: directory created: artifacts]
+[2024-11-16 18:23:17,068: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-16 18:23:17,068: INFO :data_ingestion: Filw already exists]
+[2024-11-16 18:23:17,075: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-16 18:23:17,076: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-16 18:23:17,081: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-16 18:23:17,083: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-16 18:23:17,089: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-16 18:23:17,091: INFO :common: directory created: artifacts]
+[2024-11-16 18:23:17,092: INFO :common: directory created: artifacts/data_validation]
+[2024-11-16 18:23:17,153: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 12:07:34,277: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 12:07:34,290: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 12:07:34,300: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 12:07:34,311: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 12:07:34,313: INFO :common: directory created: artifacts]
+[2024-11-17 12:07:34,314: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 12:07:34,315: INFO :data_ingestion: Filw already exists]
+[2024-11-17 12:07:34,341: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 12:07:34,341: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 12:07:34,347: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 12:07:34,350: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 12:07:34,354: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 12:07:34,357: INFO :common: directory created: artifacts]
+[2024-11-17 12:07:34,358: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 12:07:34,389: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 12:07:34,390: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 12:07:34,391: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 14:52:36,185: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 14:52:36,205: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 14:52:36,219: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 14:52:36,242: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 14:52:36,244: INFO :common: directory created: artifacts]
+[2024-11-17 14:52:36,245: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 14:52:36,247: INFO :data_ingestion: Filw already exists]
+[2024-11-17 14:52:36,292: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 14:52:36,293: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 14:52:36,298: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 14:52:36,304: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 14:52:36,309: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 14:52:36,312: INFO :common: directory created: artifacts]
+[2024-11-17 14:52:36,313: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 14:52:36,375: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 14:52:36,376: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 14:52:36,379: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 14:52:36,380: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 14:52:36,387: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 14:52:36,391: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 14:52:36,396: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 14:52:36,399: INFO :common: directory created: artifacts]
+[2024-11-17 14:52:36,402: ERROR :main: "'ConfigBox' object has no attribute 'model_trainer'"]
+Traceback (most recent call last):
+  File "box\box.py", line 504, in box.box.Box.__getitem__
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 537, in box.box.Box.__getattr__
+  File "box\box.py", line 525, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 539, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 553, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 504, in box.box.Box.__getitem__
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 537, in box.box.Box.__getattr__
+  File "box\box.py", line 525, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 539, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer = config.get_model_trainer_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 57, in get_model_trainer_config
+    config = self.config.model_trainer
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 553, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+[2024-11-17 15:17:37,259: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 15:17:37,281: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:17:37,283: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:17:37,287: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:17:37,288: INFO :common: directory created: artifacts]
+[2024-11-17 15:17:37,290: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 15:17:37,290: INFO :data_ingestion: Filw already exists]
+[2024-11-17 15:17:37,301: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 15:17:37,302: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 15:17:37,315: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:17:37,319: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:17:37,325: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:17:37,328: INFO :common: directory created: artifacts]
+[2024-11-17 15:17:37,330: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 15:17:37,378: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 15:17:37,379: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 15:17:37,381: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 15:17:37,382: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 15:17:37,387: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:17:37,390: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:17:37,397: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:17:37,399: INFO :common: directory created: artifacts]
+[2024-11-17 15:17:37,400: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-17 15:17:37,401: ERROR :main: __init__() got an unexpected keyword argument 'testdata_path']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer = config.get_model_trainer_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 63, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+TypeError: __init__() got an unexpected keyword argument 'testdata_path'
+[2024-11-17 15:18:41,621: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 15:18:41,628: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:18:41,633: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:18:41,640: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:18:41,645: INFO :common: directory created: artifacts]
+[2024-11-17 15:18:41,646: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 15:18:41,650: INFO :data_ingestion: Filw already exists]
+[2024-11-17 15:18:41,664: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 15:18:41,668: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 15:18:41,677: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:18:41,683: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:18:41,693: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:18:41,697: INFO :common: directory created: artifacts]
+[2024-11-17 15:18:41,700: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 15:18:41,760: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 15:18:41,761: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 15:18:41,762: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 15:18:41,763: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 15:18:41,769: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:18:41,772: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:18:41,778: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:18:41,781: INFO :common: directory created: artifacts]
+[2024-11-17 15:18:41,784: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-17 15:18:41,787: ERROR :main: local variable 'model_trainer_config' referenced before assignment]
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 15, in initiate_model_training
+    model_trainer_config = ModelTrainer(config=model_trainer_config)
+UnboundLocalError: local variable 'model_trainer_config' referenced before assignment
+[2024-11-17 15:21:15,247: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 15:21:15,254: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:21:15,257: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:21:15,265: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:21:15,268: INFO :common: directory created: artifacts]
+[2024-11-17 15:21:15,269: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 15:21:15,271: INFO :data_ingestion: Filw already exists]
+[2024-11-17 15:21:15,280: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 15:21:15,281: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 15:21:15,287: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:21:15,290: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:21:15,297: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:21:15,300: INFO :common: directory created: artifacts]
+[2024-11-17 15:21:15,301: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 15:21:15,363: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 15:21:15,364: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 15:21:15,366: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 15:21:15,366: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 15:21:15,372: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:21:15,376: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:21:15,382: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:21:15,384: INFO :common: directory created: artifacts]
+[2024-11-17 15:21:15,386: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-17 15:21:15,387: ERROR :main: 'ModelTrainer' object has no attribute 'train_model']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train_model()
+AttributeError: 'ModelTrainer' object has no attribute 'train_model'
+[2024-11-17 15:22:53,299: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 15:22:53,307: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:22:53,311: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:22:53,318: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:22:53,321: INFO :common: directory created: artifacts]
+[2024-11-17 15:22:53,323: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 15:22:53,324: INFO :data_ingestion: Filw already exists]
+[2024-11-17 15:22:53,334: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 15:22:53,336: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 15:22:53,347: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:22:53,351: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:22:53,357: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:22:53,359: INFO :common: directory created: artifacts]
+[2024-11-17 15:22:53,361: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 15:22:53,441: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 15:22:53,443: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 15:22:53,461: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 15:22:53,468: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 15:22:53,476: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:22:53,479: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:22:53,484: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:22:53,489: INFO :common: directory created: artifacts]
+[2024-11-17 15:22:53,498: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-17 15:22:53,505: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-17 15:24:24,631: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 15:24:24,637: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:24:24,639: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:24:24,643: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:24:24,645: INFO :common: directory created: artifacts]
+[2024-11-17 15:24:24,646: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 15:24:24,646: INFO :data_ingestion: Filw already exists]
+[2024-11-17 15:24:24,653: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 15:24:24,654: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 15:24:24,659: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:24:24,662: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:24:24,668: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:24:24,670: INFO :common: directory created: artifacts]
+[2024-11-17 15:24:24,672: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 15:24:24,727: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 15:24:24,728: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 15:24:24,729: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 15:24:24,729: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 15:24:24,735: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:24:24,739: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:24:24,744: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:24:24,747: INFO :common: directory created: artifacts]
+[2024-11-17 15:24:24,750: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-17 15:24:24,752: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-17 15:33:25,036: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-17 15:33:25,042: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:33:25,044: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:33:25,048: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:33:25,049: INFO :common: directory created: artifacts]
+[2024-11-17 15:33:25,050: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-17 15:33:25,051: INFO :data_ingestion: Filw already exists]
+[2024-11-17 15:33:25,057: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-17 15:33:25,058: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-17 15:33:25,066: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:33:25,069: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:33:25,078: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:33:25,081: INFO :common: directory created: artifacts]
+[2024-11-17 15:33:25,086: INFO :common: directory created: artifacts/data_validation]
+[2024-11-17 15:33:25,144: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-17 15:33:25,145: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-17 15:33:25,148: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-17 15:33:25,148: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-17 15:33:25,154: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-17 15:33:25,157: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-17 15:33:25,164: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-17 15:33:25,167: INFO :common: directory created: artifacts]
+[2024-11-17 15:33:25,168: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-17 15:33:25,170: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-18 11:42:46,300: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 11:42:46,317: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:42:46,327: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:42:46,341: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:42:46,343: INFO :common: directory created: artifacts]
+[2024-11-18 11:42:46,343: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 11:42:46,344: INFO :data_ingestion: Filw already exists]
+[2024-11-18 11:42:46,363: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 11:42:46,363: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 11:42:46,367: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:42:46,368: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:42:46,372: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:42:46,373: INFO :common: directory created: artifacts]
+[2024-11-18 11:42:46,374: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 11:42:46,403: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 11:42:46,403: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-18 11:42:46,404: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-18 11:42:46,405: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 11:42:46,410: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:42:46,412: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:42:46,416: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:42:46,417: INFO :common: directory created: artifacts]
+[2024-11-18 11:42:46,418: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 11:42:46,419: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-18 11:56:51,616: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 11:56:51,622: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:56:51,623: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:56:51,628: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:56:51,628: INFO :common: directory created: artifacts]
+[2024-11-18 11:56:51,629: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 11:56:51,629: INFO :data_ingestion: Filw already exists]
+[2024-11-18 11:56:51,634: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 11:56:51,634: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 11:56:51,638: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:56:51,639: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:56:51,642: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:56:51,643: INFO :common: directory created: artifacts]
+[2024-11-18 11:56:51,643: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 11:56:51,675: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 11:56:51,675: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-18 11:56:51,681: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:56:51,683: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:56:51,687: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:56:51,688: INFO :common: directory created: artifacts]
+[2024-11-18 11:56:51,690: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 11:56:51,690: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-18 11:56:51,691: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 11:56:51,694: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 11:56:51,696: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 11:56:51,699: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 11:56:51,700: INFO :common: directory created: artifacts]
+[2024-11-18 11:56:51,702: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 11:56:51,702: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_ingestion.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-18 15:28:04,518: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 15:28:04,524: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:28:04,535: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:28:04,548: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:28:04,549: INFO :common: directory created: artifacts]
+[2024-11-18 15:28:04,550: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:28:04,550: INFO :data_ingestion: Filw already exists]
+[2024-11-18 15:28:04,579: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 15:28:04,580: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 15:28:04,586: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:28:04,588: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:28:04,593: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:28:04,593: INFO :common: directory created: artifacts]
+[2024-11-18 15:28:04,594: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 15:28:04,627: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 15:28:04,627: INFO :main: >>>> stage Data Transformation stage started]
+[2024-11-18 15:28:04,642: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:28:04,645: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:28:04,649: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:28:04,650: INFO :common: directory created: artifacts]
+[2024-11-18 15:28:04,651: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:28:04,653: INFO :main: >>> stage Data Transformation stage is completed]
+[2024-11-18 15:28:04,653: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 15:28:04,661: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:28:04,664: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:28:04,668: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:28:04,670: INFO :common: directory created: artifacts]
+[2024-11-18 15:28:04,672: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 15:28:04,673: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_model_train.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-18 15:29:38,478: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 15:29:38,485: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:29:38,488: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:29:38,493: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:29:38,494: INFO :common: directory created: artifacts]
+[2024-11-18 15:29:38,495: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:29:38,495: INFO :data_ingestion: Filw already exists]
+[2024-11-18 15:29:38,500: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 15:29:38,501: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 15:29:38,506: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:29:38,508: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:29:38,511: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:29:38,512: INFO :common: directory created: artifacts]
+[2024-11-18 15:29:38,514: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 15:29:38,558: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 15:29:38,558: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-18 15:29:38,568: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:29:38,571: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:29:38,575: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:29:38,577: INFO :common: directory created: artifacts]
+[2024-11-18 15:29:38,578: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:29:38,579: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-18 15:29:38,580: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 15:29:38,586: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:29:38,588: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:29:38,592: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:29:38,594: INFO :common: directory created: artifacts]
+[2024-11-18 15:29:38,596: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 15:29:38,597: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_model_train.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-18 15:34:19,155: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 15:34:19,160: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:34:19,162: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:34:19,165: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:34:19,166: INFO :common: directory created: artifacts]
+[2024-11-18 15:34:19,168: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:34:19,168: INFO :data_ingestion: Filw already exists]
+[2024-11-18 15:34:19,172: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 15:34:19,173: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 15:34:19,182: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:34:19,187: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:34:19,193: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:34:19,194: INFO :common: directory created: artifacts]
+[2024-11-18 15:34:19,195: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 15:34:19,230: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 15:34:19,231: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-18 15:34:19,238: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:34:19,240: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:34:19,245: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:34:19,246: INFO :common: directory created: artifacts]
+[2024-11-18 15:34:19,247: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:34:19,248: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-18 15:34:19,250: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 15:34:19,255: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:34:19,257: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:34:19,261: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:34:19,263: INFO :common: directory created: artifacts]
+[2024-11-18 15:34:19,264: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 15:34:19,265: ERROR :main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_model_train.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\AMMA\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2024-11-18 15:38:17,436: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 15:38:17,453: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:38:17,455: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:38:17,459: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:38:17,461: INFO :common: directory created: artifacts]
+[2024-11-18 15:38:17,463: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:38:17,464: INFO :data_ingestion: Filw already exists]
+[2024-11-18 15:38:17,471: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 15:38:17,472: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 15:38:17,479: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:38:17,482: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:38:17,488: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:38:17,489: INFO :common: directory created: artifacts]
+[2024-11-18 15:38:17,490: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 15:38:17,523: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 15:38:17,525: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-18 15:38:17,533: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:38:17,536: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:38:17,541: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:38:17,542: INFO :common: directory created: artifacts]
+[2024-11-18 15:38:17,544: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-18 15:38:17,615: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-18 15:38:17,615: INFO :data_transformation: (1199, 12)]
+[2024-11-18 15:38:17,616: INFO :data_transformation: (400, 12)]
+[2024-11-18 15:38:17,617: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-18 15:38:17,618: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 15:38:17,624: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:38:17,626: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:38:17,630: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:38:17,632: INFO :common: directory created: artifacts]
+[2024-11-18 15:38:17,633: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 15:38:17,673: ERROR :main: 'ModelTrainerConfig' object has no attribute 'target_columns']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    data_model_train.initiate_model_training()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_trainer.py", line 18, in train
+    train_x = train_data.drop([self.config.target_columns],axis=1)
+AttributeError: 'ModelTrainerConfig' object has no attribute 'target_columns'
+[2024-11-18 15:39:12,002: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-18 15:39:12,007: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:39:12,010: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:39:12,014: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:39:12,015: INFO :common: directory created: artifacts]
+[2024-11-18 15:39:12,016: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-18 15:39:12,017: INFO :data_ingestion: Filw already exists]
+[2024-11-18 15:39:12,027: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-18 15:39:12,028: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-18 15:39:12,035: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:39:12,038: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:39:12,042: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:39:12,043: INFO :common: directory created: artifacts]
+[2024-11-18 15:39:12,044: INFO :common: directory created: artifacts/data_validation]
+[2024-11-18 15:39:12,076: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-18 15:39:12,076: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-18 15:39:12,084: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:39:12,086: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:39:12,090: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:39:12,091: INFO :common: directory created: artifacts]
+[2024-11-18 15:39:12,093: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-18 15:39:12,132: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-18 15:39:12,133: INFO :data_transformation: (1199, 12)]
+[2024-11-18 15:39:12,134: INFO :data_transformation: (400, 12)]
+[2024-11-18 15:39:12,135: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-18 15:39:12,136: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-18 15:39:12,144: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 15:39:12,146: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-18 15:39:12,150: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-18 15:39:12,152: INFO :common: directory created: artifacts]
+[2024-11-18 15:39:12,153: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-18 15:39:12,212: INFO :main: >>> stage Model Trainer Stage is completed]
