@@ -11,7 +11,10 @@ from src.datascience.entity.config_entity import ModelEvaluationConfig
 from src.datascience.constants import *
 from src.datascience.utils.common import read_yaml,create_directories,save_json
 
-
+import os
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/venkatesh-keshamala/datascience-end-to-end.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="venkatesh-keshamala"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="ff721b9a0ef386cde8636c31a6f995db769dcc19"
 
 
 
@@ -34,7 +37,8 @@ class ModelEvaluation:
         test_y = test_data[[self.config.target_column]]
 
         mlflow.set_registry_uri(self.config.mlflow_uri)
-        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).schema
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        
         with mlflow.start_run():
 
             predicted_qualities = model.predict(test_x)

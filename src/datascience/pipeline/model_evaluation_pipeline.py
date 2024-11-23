@@ -1,6 +1,6 @@
 from src.datascience.config.configuaration import ConfiguarationManager
 from src.datascience.components.model_evaluation import ModelEvaluation
-from src.datascience.components import logger
+from src.datascience import logger
 
 STAGE_NAME = "Model evaluation stage"
 
@@ -12,4 +12,4 @@ class ModelEvaluationTrainingPipeline:
         config = ConfiguarationManager()
         model_evaluation_config = config.get_model_evaluation_config()
         model_evaluation = ModelEvaluation(config=model_evaluation_config)
-        model_evaluation.evaluate_model()
+        model_evaluation.log_into_mlflow()

@@ -1041,3 +1041,371 @@ x==========x]
 [2024-11-18 15:39:12,152: INFO :common: directory created: artifacts]
 [2024-11-18 15:39:12,153: INFO :common: directory created: artifacts/model_trainer]
 [2024-11-18 15:39:12,212: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:25:06,669: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-23 22:25:06,692: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:25:06,695: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:25:06,709: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:25:06,712: INFO :common: directory created: artifacts]
+[2024-11-23 22:25:06,714: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-23 22:25:06,715: INFO :data_ingestion: Filw already exists]
+[2024-11-23 22:25:06,737: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-23 22:25:06,738: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-23 22:25:06,745: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:25:06,748: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:25:06,755: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:25:06,757: INFO :common: directory created: artifacts]
+[2024-11-23 22:25:06,758: INFO :common: directory created: artifacts/data_validation]
+[2024-11-23 22:25:06,802: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-23 22:25:06,802: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-23 22:25:06,822: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:25:06,825: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:25:06,831: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:25:06,833: INFO :common: directory created: artifacts]
+[2024-11-23 22:25:06,835: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-23 22:25:06,884: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-23 22:25:06,885: INFO :data_transformation: (1199, 12)]
+[2024-11-23 22:25:06,886: INFO :data_transformation: (400, 12)]
+[2024-11-23 22:25:06,887: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-23 22:25:06,888: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-23 22:25:06,895: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:25:06,899: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:25:06,904: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:25:06,906: INFO :common: directory created: artifacts]
+[2024-11-23 22:25:06,907: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-23 22:25:06,980: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:41:19,509: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-23 22:41:19,514: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:19,516: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:19,521: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:19,523: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:19,525: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-23 22:41:19,526: INFO :data_ingestion: Filw already exists]
+[2024-11-23 22:41:19,531: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-23 22:41:19,532: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-23 22:41:19,538: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:19,541: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:19,544: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:19,546: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:19,547: INFO :common: directory created: artifacts/data_validation]
+[2024-11-23 22:41:19,579: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-23 22:41:19,579: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-23 22:41:19,585: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:19,588: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:19,594: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:19,596: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:19,597: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-23 22:41:19,630: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-23 22:41:19,631: INFO :data_transformation: (1199, 12)]
+[2024-11-23 22:41:19,631: INFO :data_transformation: (400, 12)]
+[2024-11-23 22:41:19,632: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-23 22:41:19,633: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-23 22:41:19,639: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:19,641: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:19,645: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:19,646: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:19,648: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-23 22:41:19,696: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:41:19,697: INFO :main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-11-23 22:41:19,702: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:19,706: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:19,711: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:19,712: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:19,714: INFO :common: directory created: artifacts/model_evaluation]
+[2024-11-23 22:41:19,715: ERROR :main: "'ConfigBox' object has no attribute 'names'"]
+Traceback (most recent call last):
+  File "box\box.py", line 504, in box.box.Box.__getitem__
+KeyError: 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 537, in box.box.Box.__getattr__
+  File "box\box.py", line 525, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'names'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 539, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 553, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'names'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 504, in box.box.Box.__getitem__
+KeyError: 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 537, in box.box.Box.__getattr__
+  File "box\box.py", line 525, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'names'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 539, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 52, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 89, in get_model_evaluation_config
+    target_column=schema.names,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 553, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'names'"
+[2024-11-23 22:41:31,585: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-23 22:41:31,592: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:31,594: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:31,597: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:31,599: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:31,600: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-23 22:41:31,601: INFO :data_ingestion: Filw already exists]
+[2024-11-23 22:41:31,608: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-23 22:41:31,608: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-23 22:41:31,616: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:31,619: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:31,624: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:31,625: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:31,627: INFO :common: directory created: artifacts/data_validation]
+[2024-11-23 22:41:31,673: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-23 22:41:31,674: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-23 22:41:31,691: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:31,694: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:31,701: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:31,707: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:31,710: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-23 22:41:31,762: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-23 22:41:31,764: INFO :data_transformation: (1199, 12)]
+[2024-11-23 22:41:31,765: INFO :data_transformation: (400, 12)]
+[2024-11-23 22:41:31,767: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-23 22:41:31,768: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-23 22:41:31,774: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:31,777: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:31,781: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:31,784: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:31,785: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-23 22:41:31,841: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:41:31,841: INFO :main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-11-23 22:41:31,847: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:41:31,851: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:41:31,854: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:41:31,856: INFO :common: directory created: artifacts]
+[2024-11-23 22:41:31,858: INFO :common: directory created: artifacts/model_evaluation]
+[2024-11-23 22:41:31,858: ERROR :main: "'ConfigBox' object has no attribute 'names'"]
+Traceback (most recent call last):
+  File "box\box.py", line 504, in box.box.Box.__getitem__
+KeyError: 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 537, in box.box.Box.__getattr__
+  File "box\box.py", line 525, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'names'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 539, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 553, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'names'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 504, in box.box.Box.__getitem__
+KeyError: 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 537, in box.box.Box.__getattr__
+  File "box\box.py", line 525, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'names'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 539, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'names'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 52, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 89, in get_model_evaluation_config
+    target_column=schema.names,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 553, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'names'"
+[2024-11-23 22:42:17,449: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-23 22:42:17,457: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:17,459: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:17,464: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:17,467: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:17,468: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-23 22:42:17,469: INFO :data_ingestion: Filw already exists]
+[2024-11-23 22:42:17,475: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-23 22:42:17,475: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-23 22:42:17,481: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:17,483: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:17,487: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:17,489: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:17,490: INFO :common: directory created: artifacts/data_validation]
+[2024-11-23 22:42:17,522: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-23 22:42:17,523: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-23 22:42:17,532: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:17,534: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:17,538: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:17,539: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:17,540: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-23 22:42:17,568: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-23 22:42:17,568: INFO :data_transformation: (1199, 12)]
+[2024-11-23 22:42:17,569: INFO :data_transformation: (400, 12)]
+[2024-11-23 22:42:17,570: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-23 22:42:17,571: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-23 22:42:17,577: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:17,579: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:17,583: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:17,584: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:17,585: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-23 22:42:17,639: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:42:17,640: INFO :main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-11-23 22:42:17,645: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:17,648: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:17,651: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:17,652: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:17,654: INFO :common: directory created: artifacts/model_evaluation]
+[2024-11-23 22:42:17,655: ERROR :main: __init__() got an unexpected keyword argument 'all_params']
+Traceback (most recent call last):
+  File "main.py", line 52, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\config\configuaration.py", line 83, in get_model_evaluation_config
+    model_evaluation_config=ModelEvaluationConfig(
+TypeError: __init__() got an unexpected keyword argument 'all_params'
+[2024-11-23 22:42:50,984: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-23 22:42:50,990: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:50,993: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:50,998: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:51,000: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:51,001: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-23 22:42:51,002: INFO :data_ingestion: Filw already exists]
+[2024-11-23 22:42:51,006: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-23 22:42:51,007: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-23 22:42:51,013: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:51,015: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:51,019: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:51,020: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:51,021: INFO :common: directory created: artifacts/data_validation]
+[2024-11-23 22:42:51,049: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-23 22:42:51,050: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-23 22:42:51,058: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:51,061: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:51,068: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:51,070: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:51,071: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-23 22:42:51,117: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-23 22:42:51,117: INFO :data_transformation: (1199, 12)]
+[2024-11-23 22:42:51,118: INFO :data_transformation: (400, 12)]
+[2024-11-23 22:42:51,119: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-23 22:42:51,120: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-23 22:42:51,127: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:51,130: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:51,134: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:51,136: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:51,137: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-23 22:42:51,217: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:42:51,218: INFO :main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-11-23 22:42:51,224: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:42:51,226: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:42:51,229: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:42:51,231: INFO :common: directory created: artifacts]
+[2024-11-23 22:42:51,232: INFO :common: directory created: artifacts/model_evaluation]
+[2024-11-23 22:42:51,252: ERROR :main: 'ParseResult' object has no attribute 'schema']
+Traceback (most recent call last):
+  File "main.py", line 52, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\pipeline\model_evaluation_pipeline.py", line 15, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "D:\HIDDEN\END_TO_END\New folder\datascience-end-to-end\src\datascience\components\model_evaluation.py", line 40, in log_into_mlflow
+    tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).schema
+AttributeError: 'ParseResult' object has no attribute 'schema'
+[2024-11-23 22:45:29,676: INFO :main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2024-11-23 22:45:29,683: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:45:29,684: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:45:29,687: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:45:29,688: INFO :common: directory created: artifacts]
+[2024-11-23 22:45:29,689: INFO :common: directory created: artifacts/data_ingestion]
+[2024-11-23 22:45:29,690: INFO :data_ingestion: Filw already exists]
+[2024-11-23 22:45:29,696: INFO :main: >>>>> stage Data Ingestion Stage completed <<<<<]
+[2024-11-23 22:45:29,697: INFO :main: >>>> stage Data validation Stage started]
+[2024-11-23 22:45:29,705: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:45:29,707: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:45:29,711: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:45:29,712: INFO :common: directory created: artifacts]
+[2024-11-23 22:45:29,713: INFO :common: directory created: artifacts/data_validation]
+[2024-11-23 22:45:29,740: INFO :main: >>> stage Data validation Stage is completed]
+[2024-11-23 22:45:29,741: INFO :main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-11-23 22:45:29,748: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:45:29,750: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:45:29,753: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:45:29,754: INFO :common: directory created: artifacts]
+[2024-11-23 22:45:29,755: INFO :common: directory created: artifacts/data_transformation]
+[2024-11-23 22:45:29,783: INFO :data_transformation: Splited data into training and test sets]
+[2024-11-23 22:45:29,783: INFO :data_transformation: (1199, 12)]
+[2024-11-23 22:45:29,784: INFO :data_transformation: (400, 12)]
+[2024-11-23 22:45:29,785: INFO :main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-11-23 22:45:29,785: INFO :main: >>>> stage Model Trainer Stage started]
+[2024-11-23 22:45:29,792: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:45:29,794: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:45:29,799: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:45:29,801: INFO :common: directory created: artifacts]
+[2024-11-23 22:45:29,802: INFO :common: directory created: artifacts/model_trainer]
+[2024-11-23 22:45:29,849: INFO :main: >>> stage Model Trainer Stage is completed]
+[2024-11-23 22:45:29,849: INFO :main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-11-23 22:45:29,854: INFO :common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 22:45:29,856: INFO :common: yaml file: params.yaml loaded successfully]
+[2024-11-23 22:45:29,859: INFO :common: yaml file: schema.yaml loaded successfully]
+[2024-11-23 22:45:29,861: INFO :common: directory created: artifacts]
+[2024-11-23 22:45:29,862: INFO :common: directory created: artifacts/model_evaluation]
+[2024-11-23 22:45:32,025: INFO :common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-11-23 22:45:59,683: INFO :main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
